@@ -46,23 +46,6 @@ To get a local copy up and running, follow these simple steps.
    ```
 5. Open `http://localhost:5173` (or the port specified in your terminal) in your browser.
 
-## ⚙️ Configuration
-
-### Updating Content
-To update the portfolio with your own information, simply edit the `src/data/portfolioData.js` file. No need to dig through React components!
-
-### Setting up EmailJS
-To make the contact form send emails to your inbox:
-1. Create a free account at EmailJS.
-2. Add a new Email Service (e.g., Gmail) and copy the **Service ID**.
-3. Create a new Email Template and copy the **Template ID**.
-4. Open `src/components/sections/Contact.jsx` and replace the placeholder values:
-   ```javascript
-   const SERVICE_ID  = "YOUR_SERVICE_ID";
-   const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
-   ```
-5. Ensure your **Public Key** is added to your root `index.html` file as an EmailJS script, or initialized in your app entry.
-
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
