@@ -14,7 +14,7 @@ export const PERSONAL = {
   location:  "Erode, Tamil Nadu, India",
   email:     "muraliofficial68@gmail.com",
   phone:     "+91 6383217328",
-  portfolio: "https://mySelf.vercel.app",
+  portfolio: "https://my-self-murali.vercel.app",
   github:    "https://github.com/muraliofficial",
   linkedin:  "https://www.linkedin.com/in/murali-a-096738297/",
   resume:    "/Murali_A.pdf",

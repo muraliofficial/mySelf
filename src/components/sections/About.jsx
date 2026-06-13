@@ -43,7 +43,7 @@ function ProfileCard() {
           { icon: "📍", text: PERSONAL.location },
           { icon: "📧", text: PERSONAL.email    },
           { icon: "📞", text: PERSONAL.phone    },
-          { icon: "🌐", text: "mySelf.vercel.app" },
+          { icon: "🌐", text: "my-self-murali.vercel.app" },
         ].map((item) => (
           <div key={item.icon} className="flex items-center gap-3 text-[12px] text-white/62 font-semibold">
             <div className="w-8 h-8 rounded-lg flex items-center justify-center text-sm flex-shrink-0"

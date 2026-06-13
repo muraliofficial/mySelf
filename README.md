@@ -77,6 +77,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 - **LinkedIn**: Murali A
 - **GitHub**: @muraliofficial
-- **Portfolio**: mySelf.vercel.app
+- **Portfolio**: my-self-murali.vercel.app
 
 *Designed & Built with ❤️ by Murali A.*
