@@ -48,7 +48,7 @@ function ContactInfoPanel() {
         <span className="w-2 h-2 rounded-full flex-shrink-0"
           style={{ background: "#34d399", animation: "tl-pulse 1.8s ease-in-out infinite" }} />
         <p className="text-[12px] font-semibold text-white/65">
-          Currently <span className="text-emerald-400 font-bold">available</span> for freelance &amp; full-time opportunities
+          Currently <span className="text-emerald-400 font-bold">available</span> for full-time opportunities
         </p>
       </div>
 

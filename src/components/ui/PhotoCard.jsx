@@ -150,7 +150,7 @@ export function HeroPhotoCard({ src, alt = "Murali A — Full-Stack Web Develope
               animation:  "photo-avail-pulse 1.8s ease-in-out infinite",
             }}
           />
-          Available for Work
+          Ready for Innovative
         </div>
 
       </div>

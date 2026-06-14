@@ -140,7 +140,7 @@ function HeroPhotoCard() {
         >
           <span className="w-1.5 h-1.5 rounded-full flex-shrink-0"
             style={{ background: "#34d399", animation: "hero-dot-pulse 1.8s ease-in-out infinite" }} />
-          Available for Work
+          Ready for Innovative
         </div>
       </div>
     </div>
@@ -249,7 +249,7 @@ export default function Hero() {
             style={{ borderColor: "rgba(167,139,250,0.3)", color: "#a78bfa", background: "rgba(124,58,237,0.12)", letterSpacing: "0.1em" }}
           >
             <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "#34d399" }} />
-            AVAILABLE FOR WORK · ERODE, TN
+            READY FOR INNOVATIVE · ERODE, TN
           </div>
 
           {/* Name */}
