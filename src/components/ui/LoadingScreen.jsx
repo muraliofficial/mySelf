@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import muraliPhoto from "../../assets/murali-profile.jpg";
 
 export default function LoadingScreen({ onDone }) {
   const [progress, setProgress] = useState(0);
@@ -31,17 +32,22 @@ export default function LoadingScreen({ onDone }) {
         pointerEvents: fadeOut ? "none" : "all",
       }}
     >
-      {/* Pulsing M orb */}
+      {/* Profile photo orb */}
       <div className="relative mb-8">
         <div
-          className="w-20 h-20 rounded-full flex items-center justify-center text-3xl font-black text-white"
+          className="w-20 h-20 rounded-full overflow-hidden"
           style={{
-            background: "linear-gradient(135deg,#7c3aed,#4c1d95)",
-            boxShadow:  "0 0 40px rgba(124,58,237,0.7)",
-            animation:  "ls-pulse 1.2s ease-in-out infinite",
+            border:    "2.5px solid rgba(167,139,250,0.6)",
+            boxShadow: "0 0 40px rgba(124,58,237,0.7)",
+            animation: "ls-pulse 1.2s ease-in-out infinite",
           }}
         >
-          M
+          <img
+            src={muraliPhoto}
+            alt="Murali"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: "center 15%" }}
+          />
         </div>
         <div
           className="absolute inset-[-8px] rounded-full"
@@ -52,14 +58,13 @@ export default function LoadingScreen({ onDone }) {
         />
       </div>
 
-      {/* Name */}
       <p
         className="text-2xl font-black mb-1"
         style={{
-          background:             "linear-gradient(135deg,#e2dcfc,#a78bfa,#7c3aed)",
-          WebkitBackgroundClip:   "text",
-          WebkitTextFillColor:    "transparent",
-          backgroundClip:         "text",
+          background:           "linear-gradient(135deg,#e2dcfc,#a78bfa,#7c3aed)",
+          WebkitBackgroundClip: "text",
+          WebkitTextFillColor:  "transparent",
+          backgroundClip:       "text",
         }}
       >
         Murali
@@ -68,7 +73,6 @@ export default function LoadingScreen({ onDone }) {
         Full-Stack Developer
       </p>
 
-      {/* Progress bar */}
       <div
         className="w-48 h-[3px] rounded-full overflow-hidden"
         style={{ background: "rgba(255,255,255,0.08)" }}

@@ -90,7 +90,7 @@ function HeroPhotoCard() {
             src={muraliPhoto}
             alt="Murali A — Full-Stack Web Developer"
             className="w-full h-full object-cover"
-            style={{ objectPosition: "center 8%" }}
+            style={{ objectPosition: "center 15%" }}
           />
           {/* Bottom fade to blend into background */}
           <div
@@ -140,7 +140,7 @@ function HeroPhotoCard() {
         >
           <span className="w-1.5 h-1.5 rounded-full flex-shrink-0"
             style={{ background: "#34d399", animation: "hero-dot-pulse 1.8s ease-in-out infinite" }} />
-          Ready for Innovative
+          Available for Work
         </div>
       </div>
     </div>
@@ -151,7 +151,7 @@ const ROLES = [
   "Full-Stack Web Developer",
   "React & Vue Specialist",
   "Tailwind CSS v4 Architect",
-  // "Electron.js Desktop Builder",
+  "Electron.js Desktop Builder",
   "Firebase Cloud Engineer",
 ];
 
@@ -249,7 +249,7 @@ export default function Hero() {
             style={{ borderColor: "rgba(167,139,250,0.3)", color: "#a78bfa", background: "rgba(124,58,237,0.12)", letterSpacing: "0.1em" }}
           >
             <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "#34d399" }} />
-            READY FOR INNOVATIVE · ERODE, TN
+            AVAILABLE FOR WORK · ERODE, TN
           </div>
 
           {/* Name */}
@@ -263,7 +263,7 @@ export default function Hero() {
               backgroundClip: "text",
             }}
           >
-            Murali A
+            Murali A.
           </h1>
 
           {/* Typewriter role */}
@@ -280,7 +280,7 @@ export default function Hero() {
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-8">
-            {/* <a
+            <a
               href="https://buykart-pearl.vercel.app"
               target="_blank" rel="noopener noreferrer"
               className="group flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-white text-[13px] transition-all duration-300 hover:scale-105 active:scale-95"
@@ -290,7 +290,7 @@ export default function Hero() {
               <svg xmlns="http://www.w3.org/2000/svg" width={13} height={13} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2} className="group-hover:translate-x-1 transition-transform">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
-            </a> */}
+            </a>
 
             <a href={PERSONAL.github} target="_blank" rel="noopener noreferrer"
               className="flex items-center gap-2 px-5 py-3 rounded-xl font-semibold text-white/78 text-[13px] border border-white/14 hover:border-white/30 hover:text-white hover:bg-white/5 transition-all duration-200">

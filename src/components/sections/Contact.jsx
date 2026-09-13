@@ -13,7 +13,7 @@ import { PERSONAL } from "../../data/portfolioData";
  * Replace the two values below, then the form will
  * send real emails without any backend.
  */
-const SERVICE_ID  = "muraliofficial68_gmail_com";
+const SERVICE_ID  = "YOUR_SERVICE_ID";
 const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
 
 function AboutLabel({ text }) {
@@ -48,7 +48,7 @@ function ContactInfoPanel() {
         <span className="w-2 h-2 rounded-full flex-shrink-0"
           style={{ background: "#34d399", animation: "tl-pulse 1.8s ease-in-out infinite" }} />
         <p className="text-[12px] font-semibold text-white/65">
-          Currently <span className="text-emerald-400 font-bold">available</span> for full-time opportunities
+          Currently <span className="text-emerald-400 font-bold">available</span> for freelance &amp; full-time opportunities
         </p>
       </div>
 
@@ -140,8 +140,8 @@ function ContactForm() {
   };
 
   const fields = [
-    { label: "Your Name",     name: "name",    type: "input",    placeholder: "Murali A" },
-    { label: "Email Address", name: "email",   type: "input",    placeholder: "muraliofficial68@gmail.com" },
+    { label: "Your Name",     name: "name",    type: "input",    placeholder: "John Doe" },
+    { label: "Email Address", name: "email",   type: "input",    placeholder: "john@example.com" },
     { label: "Subject",       name: "subject", type: "input",    placeholder: "Project Collaboration / Job Opportunity" },
     { label: "Message",       name: "message", type: "textarea", placeholder: "Tell me about your project or opportunity..." },
   ];

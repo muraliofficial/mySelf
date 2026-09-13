@@ -1,65 +1,122 @@
-# 🌌 Murali A | Full-Stack Developer Portfolio
+# Murali — Portfolio
 
-A sleek, high-performance, and data-driven personal portfolio website built to showcase my projects, skills, and experience. Engineered with React and Tailwind CSS v4, featuring a modern dark-mode aesthetic, glassmorphic UI elements, and fluid animations.
-
-## ✨ Features
-
-- **Data-Driven Architecture**: All portfolio content (bio, skills, projects, experience) is centralized in a single `portfolioData.js` file for effortless updates without touching UI components.
-- **Premium UI/UX**: Designed with deep purples, neon accents, and glassmorphism. Includes custom hover physics, gradient spinning rings, and smooth scroll reveals.
-- **Fully Responsive**: Flawless layout scaling across mobile, tablet, and desktop viewports.
-- **Functional Contact Form**: Integrated with EmailJS to send real-time emails directly from the browser, complete with form validation and a `mailto:` fallback.
-- **Dark Mode**: Configured out-of-the-box for a developer-friendly dark aesthetic.
-
-## 🛠️ Tech Stack
-
-- **Frontend**: React.js
-- **Styling**: Tailwind CSS v4 & Custom CSS-in-JS
-- **Icons & Typography**: Custom SVG Icons, Nunito Font
-- **Form Handling**: EmailJS (Serverless email delivery)
-- **Deployment**: Vercel / Netlify (Recommended)
-
-## 🚀 Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-- Node.js (v18 or higher recommended)
-- npm or yarn
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/muraliofficial/murali-portfolio.git
-   ```
-2. Navigate into the project directory:
-   ```bash
-   cd murali-portfolio
-   ```
-3. Install NPM packages:
-   ```bash
-   npm install
-   ```
-4. Start the development server:
-   ```bash
-   npm run dev
-   ```
-5. Open `http://localhost:5173` (or the port specified in your terminal) in your browser.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
-
-## 📜 License
-
-Distributed under the MIT License. See `LICENSE` for more information.
+**Full-Stack Web Developer Portfolio**
+Built with React 18 + Vite + Tailwind CSS v4
 
 ---
 
-### 📬 Let's Connect
+## 🚀 Quick Start
 
-- **LinkedIn**: Murali A
-- **GitHub**: @muraliofficial
-- **Portfolio**: my-self-murali.vercel.app
+```bash
+# 1. Install dependencies
+npm install
 
-*Designed & Built with ❤️ by Murali A.*
+# 2. Start dev server
+npm run dev
+
+# 3. Build for production
+npm run build
+
+# 4. Preview production build locally
+npm run preview
+```
+
+---
+
+## 📁 Project Structure
+
+```
+murali-portfolio/
+├── public/
+│   ├── favicon.svg          # M monogram favicon
+│   └── Murali_Resume.pdf    # ← Add your resume PDF here
+│
+├── src/
+│   ├── assets/              # Static images, icons
+│   │
+│   ├── components/
+│   │   ├── sections/        # Full page sections
+│   │   │   ├── Hero.jsx
+│   │   │   ├── About.jsx
+│   │   │   ├── Skills.jsx
+│   │   │   ├── Experience.jsx
+│   │   │   ├── Projects.jsx
+│   │   │   └── Contact.jsx
+│   │   │
+│   │   └── ui/              # Reusable UI primitives
+│   │       ├── Navbar.jsx
+│   │       ├── LoadingScreen.jsx
+│   │       ├── Reveal.jsx
+│   │       ├── SectionHeader.jsx
+│   │       └── Footer.jsx
+│   │
+│   ├── hooks/
+│   │   └── useScrollReveal.js
+│   │
+│   ├── data/
+│   │   └── portfolioData.js  # All content — edit here
+│   │
+│   ├── index.css             # Tailwind v4 theme + global styles
+│   ├── main.jsx              # React entry point
+│   └── App.jsx               # Root component
+│
+├── index.html                # SEO meta tags, fonts, EmailJS
+├── vite.config.js
+├── vercel.json               # Vercel SPA routing
+├── package.json
+└── .gitignore
+```
+
+---
+
+## ⚙️ EmailJS Setup (Contact Form)
+
+1. Go to [https://emailjs.com](https://emailjs.com) and create a free account
+2. Create a **Service** (Gmail) → copy **Service ID**
+3. Create an **Email Template** → copy **Template ID**
+4. Go to Account → copy **Public Key**
+5. Open `src/components/sections/Contact.jsx`
+6. Replace these 3 values:
+
+```js
+const SERVICE_ID  = "YOUR_SERVICE_ID";
+const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
+// Public key is already set in index.html
+```
+
+---
+
+## 📄 Resume
+
+Place your resume PDF at:
+```
+public/Murali_Resume.pdf
+```
+The download button in the Hero section links to this file automatically.
+
+---
+
+## 🌐 Deploy to Vercel
+
+```bash
+# Option 1 — Vercel CLI
+npm i -g vercel
+vercel
+
+# Option 2 — GitHub
+# Push to GitHub → Import repo on vercel.com → Deploy (zero config)
+```
+
+---
+
+## 🎨 Customization
+
+All content lives in one file:
+```
+src/data/portfolioData.js
+```
+Edit your name, bio, skills, experience, projects and contact info there.
+
+---
+
+Built by **Murali A** · React + Tailwind CSS v4

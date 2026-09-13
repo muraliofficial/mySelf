@@ -43,7 +43,7 @@ function ProfileCard() {
           { icon: "📍", text: PERSONAL.location },
           { icon: "📧", text: PERSONAL.email    },
           { icon: "📞", text: PERSONAL.phone    },
-          { icon: "🌐", text: "my-self-murali.vercel.app" },
+          { icon: "🌐", text: "murali-myportfolio.vercel.app" },
         ].map((item) => (
           <div key={item.icon} className="flex items-center gap-3 text-[12px] text-white/62 font-semibold">
             <div className="w-8 h-8 rounded-lg flex items-center justify-center text-sm flex-shrink-0"
@@ -108,7 +108,8 @@ export default function About() {
                 <span className="text-purple-400 font-bold">Vue 3</span>,{" "}
                 <span className="text-purple-400 font-bold">Tailwind CSS v4</span>, and{" "}
                 <span className="text-purple-400 font-bold">Node.js</span> — backed by{" "}
-                <span className="text-purple-400 font-bold">Firebase</span> for cloud infrastructure
+                <span className="text-purple-400 font-bold">Firebase</span> for cloud infrastructure and{" "}
+                <span className="text-purple-400 font-bold">Electron.js</span> for native desktop utilities.
                 <br /><br />
                 I thrive at the intersection of clean code and stunning design. Currently engineering
                 enterprise-grade systems at{" "}

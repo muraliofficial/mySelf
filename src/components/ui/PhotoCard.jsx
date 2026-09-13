@@ -76,7 +76,7 @@ export function HeroPhotoCard({ src, alt = "Murali A — Full-Stack Web Develope
             src={src}
             alt={alt}
             className="w-full h-full object-cover"
-            style={{ objectPosition: "center 8%" }}
+            style={{ objectPosition: "center 15%" }}
             onError={(e) => {
               e.target.style.display = "none";
               e.target.parentNode.style.background =
@@ -150,7 +150,7 @@ export function HeroPhotoCard({ src, alt = "Murali A — Full-Stack Web Develope
               animation:  "photo-avail-pulse 1.8s ease-in-out infinite",
             }}
           />
-          Ready for Innovative
+          Available for Work
         </div>
 
       </div>
@@ -190,7 +190,7 @@ export function AboutPhotoCircle({ src, alt = "Murali A" }) {
           src={src}
           alt={alt}
           className="w-full h-full object-cover"
-          style={{ objectPosition: "center 10%" }}
+          style={{ objectPosition: "center 15%" }}
           onError={(e) => {
             /* Fallback: show "M" monogram if photo fails to load */
             e.target.style.display = "none";
