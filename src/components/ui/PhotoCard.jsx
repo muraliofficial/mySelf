@@ -40,8 +40,8 @@ export function HeroPhotoCard({ src, alt = "Murali A — Full-Stack Web Develope
       <div
         className="relative flex-shrink-0"
         style={{
-          width:  "clamp(230px, 35vw, 360px)",
-          height: "clamp(287px, 43.75vw, 450px)",
+          width:  "clamp(220px, 28vw, 310px)",
+          height: "clamp(275px, 35vw, 390px)",
         }}
       >
 
@@ -76,7 +76,7 @@ export function HeroPhotoCard({ src, alt = "Murali A — Full-Stack Web Develope
             src={src}
             alt={alt}
             className="w-full h-full object-cover"
-            style={{ objectPosition: "center 15%" }}
+            style={{ objectPosition: "center 26%", transform: "scale(1.08)", transformOrigin: "center 28%" }}
             onError={(e) => {
               e.target.style.display = "none";
               e.target.parentNode.style.background =
@@ -164,7 +164,7 @@ export function HeroPhotoCard({ src, alt = "Murali A — Full-Stack Web Develope
 ══════════════════════════════════════════════ */
 export function AboutPhotoCircle({ src, alt = "Murali A" }) {
   return (
-    <div className="relative w-24 h-24 mx-auto mb-4">
+    <div className="relative w-28 h-28 mx-auto mb-4">
 
       {/* Slow spinning ring border */}
       <div
@@ -178,7 +178,7 @@ export function AboutPhotoCircle({ src, alt = "Murali A" }) {
 
       {/* Photo circle */}
       <div
-        className="w-24 h-24 rounded-full overflow-hidden"
+        className="w-28 h-28 rounded-full overflow-hidden"
         style={{
           border:    "3px solid rgba(167,139,250,0.48)",
           boxShadow: "0 0 28px rgba(124,58,237,0.6)",
@@ -190,7 +190,7 @@ export function AboutPhotoCircle({ src, alt = "Murali A" }) {
           src={src}
           alt={alt}
           className="w-full h-full object-cover"
-          style={{ objectPosition: "center 15%" }}
+          style={{ objectPosition: "center 32%", transform: "scale(1.3)", transformOrigin: "center 32%" }}
           onError={(e) => {
             /* Fallback: show "M" monogram if photo fails to load */
             e.target.style.display = "none";

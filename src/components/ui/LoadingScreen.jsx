@@ -46,7 +46,7 @@ export default function LoadingScreen({ onDone }) {
             src={muraliPhoto}
             alt="Murali"
             className="w-full h-full object-cover"
-            style={{ objectPosition: "center 15%" }}
+            style={{ objectPosition: "center 32%", transform: "scale(1.3)", transformOrigin: "center 32%" }}
           />
         </div>
         <div

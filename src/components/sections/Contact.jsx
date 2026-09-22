@@ -13,7 +13,7 @@ import { PERSONAL } from "../../data/portfolioData";
  * Replace the two values below, then the form will
  * send real emails without any backend.
  */
-const SERVICE_ID  = "YOUR_SERVICE_ID";
+const SERVICE_ID = "YOUR_SERVICE_ID";
 const TEMPLATE_ID = "YOUR_TEMPLATE_ID";
 
 function AboutLabel({ text }) {
@@ -27,9 +27,9 @@ function AboutLabel({ text }) {
 
 function ContactInfoPanel() {
   const contacts = [
-    { icon: "📧", label: "Email",    value: PERSONAL.email,    href: `mailto:${PERSONAL.email}`,   clickable: true  },
-    { icon: "📞", label: "Phone",    value: PERSONAL.phone,    href: `tel:${PERSONAL.phone}`,       clickable: true  },
-    { icon: "📍", label: "Location", value: PERSONAL.location, href: null,                          clickable: false },
+    { icon: "📧", label: "Email", value: PERSONAL.email, href: `mailto:${PERSONAL.email}`, clickable: true },
+    { icon: "📞", label: "Phone", value: PERSONAL.phone, href: `tel:${PERSONAL.phone}`, clickable: true },
+    { icon: "📍", label: "Location", value: PERSONAL.location, href: null, clickable: false },
   ];
 
   return (
@@ -48,7 +48,7 @@ function ContactInfoPanel() {
         <span className="w-2 h-2 rounded-full flex-shrink-0"
           style={{ background: "#34d399", animation: "tl-pulse 1.8s ease-in-out infinite" }} />
         <p className="text-[12px] font-semibold text-white/65">
-          Currently <span className="text-emerald-400 font-bold">available</span> for freelance &amp; full-time opportunities
+          Ready for <span className="text-emerald-400 font-bold">New Professional Challenges</span>
         </p>
       </div>
 
@@ -76,9 +76,9 @@ function ContactInfoPanel() {
       <AboutLabel text="Find Me On" />
       <div className="grid grid-cols-2 gap-2.5">
         {[
-          { label: "GitHub",    href: PERSONAL.github,    color: "rgba(255,255,255,0.75)", accent: "rgba(255,255,255,0.12)", full: false },
-          { label: "LinkedIn",  href: PERSONAL.linkedin,  color: "#38BDF8",                accent: "rgba(56,189,248,0.22)",  full: false },
-          { label: `🌐  ${PERSONAL.portfolio.replace("https://","")}`, href: PERSONAL.portfolio, color: "#a78bfa", accent: "rgba(167,139,250,0.22)", full: true },
+          { label: "GitHub", href: PERSONAL.github, color: "rgba(255,255,255,0.75)", accent: "rgba(255,255,255,0.12)", full: false },
+          { label: "LinkedIn", href: PERSONAL.linkedin, color: "#38BDF8", accent: "rgba(56,189,248,0.22)", full: false },
+          { label: `🌐  ${PERSONAL.portfolio.replace("https://", "")}`, href: PERSONAL.portfolio, color: "#a78bfa", accent: "rgba(167,139,250,0.22)", full: true },
         ].map((s) => (
           <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
             className={`flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl text-[12px] font-extrabold transition-all duration-200 hover:brightness-125 ${s.full ? "col-span-2" : ""}`}
@@ -92,10 +92,10 @@ function ContactInfoPanel() {
 }
 
 function ContactForm() {
-  const [form,    setForm]    = useState({ name: "", email: "", subject: "", message: "" });
-  const [sent,    setSent]    = useState(false);
+  const [form, setForm] = useState({ name: "", email: "", subject: "", message: "" });
+  const [sent, setSent] = useState(false);
   const [sending, setSending] = useState(false);
-  const [error,   setError]   = useState("");
+  const [error, setError] = useState("");
 
   const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
 
@@ -111,11 +111,11 @@ function ContactForm() {
       /* EmailJS send */
       if (SERVICE_ID !== "YOUR_SERVICE_ID" && window.emailjs) {
         await window.emailjs.send(SERVICE_ID, TEMPLATE_ID, {
-          from_name:  form.name,
+          from_name: form.name,
           from_email: form.email,
-          subject:    form.subject || "Portfolio Contact",
-          message:    form.message,
-          to_email:   PERSONAL.email,
+          subject: form.subject || "Portfolio Contact",
+          message: form.message,
+          to_email: PERSONAL.email,
         });
       } else {
         /* Fallback: mailto */
@@ -140,10 +140,10 @@ function ContactForm() {
   };
 
   const fields = [
-    { label: "Your Name",     name: "name",    type: "input",    placeholder: "John Doe" },
-    { label: "Email Address", name: "email",   type: "input",    placeholder: "john@example.com" },
-    { label: "Subject",       name: "subject", type: "input",    placeholder: "Project Collaboration / Job Opportunity" },
-    { label: "Message",       name: "message", type: "textarea", placeholder: "Tell me about your project or opportunity..." },
+    { label: "Your Name", name: "name", type: "input", placeholder: "Murali A" },
+    { label: "Email Address", name: "email", type: "input", placeholder: "murali@example.com" },
+    { label: "Subject", name: "subject", type: "input", placeholder: "Project Collaboration / Job Opportunity" },
+    { label: "Message", name: "message", type: "textarea", placeholder: "Tell me about your project or opportunity..." },
   ];
 
   return (

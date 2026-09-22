@@ -63,9 +63,9 @@ function Typewriter({ texts, speed = 80, pause = 2000 }) {
 function HeroPhotoCard() {
   return (
     <div className="flex justify-center md:justify-end items-center w-full">
-      {/* Size wrapper — 4:5 portrait ratio */}
+      {/* Size wrapper — balanced portrait ratio */}
       <div className="relative flex-shrink-0"
-        style={{ width: "clamp(230px, 35vw, 360px)", height: "clamp(287px, 43.75vw, 450px)" }}>
+        style={{ width: "clamp(220px, 28vw, 310px)", height: "clamp(275px, 35vw, 390px)" }}>
 
         {/* Slow-spinning gradient ring */}
         <div
@@ -90,7 +90,7 @@ function HeroPhotoCard() {
             src={muraliPhoto}
             alt="Murali A — Full-Stack Web Developer"
             className="w-full h-full object-cover"
-            style={{ objectPosition: "center 15%" }}
+            style={{ objectPosition: "center 26%", transform: "scale(1.08)", transformOrigin: "center 28%" }}
           />
           {/* Bottom fade to blend into background */}
           <div
@@ -140,7 +140,7 @@ function HeroPhotoCard() {
         >
           <span className="w-1.5 h-1.5 rounded-full flex-shrink-0"
             style={{ background: "#34d399", animation: "hero-dot-pulse 1.8s ease-in-out infinite" }} />
-          Available for Work
+          Ready to Contribute
         </div>
       </div>
     </div>
@@ -151,12 +151,12 @@ const ROLES = [
   "Full-Stack Web Developer",
   "React & Vue Specialist",
   "Tailwind CSS v4 Architect",
-  "Electron.js Desktop Builder",
+  "REST API & Backend Engineer",
   "Firebase Cloud Engineer",
 ];
 
 const STATS = [
-  { label: "Years Experience", value: 3,  suffix: "+" },
+  { label: "Years Experience", value: 2,  suffix: "+" },
   { label: "Projects Shipped", value: 10, suffix: "+" },
   { label: "Tech Stack Tools", value: 20, suffix: "+" },
   { label: "Best Employee",    value: 1,  suffix: "🏆" },
@@ -249,7 +249,7 @@ export default function Hero() {
             style={{ borderColor: "rgba(167,139,250,0.3)", color: "#a78bfa", background: "rgba(124,58,237,0.12)", letterSpacing: "0.1em" }}
           >
             <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "#34d399" }} />
-            AVAILABLE FOR WORK · ERODE, TN
+            READY TO CONTRIBUTE · ERODE, TN
           </div>
 
           {/* Name */}
@@ -263,7 +263,7 @@ export default function Hero() {
               backgroundClip: "text",
             }}
           >
-            Murali A.
+            Murali A
           </h1>
 
           {/* Typewriter role */}
@@ -275,18 +275,17 @@ export default function Hero() {
           {/* One-liner */}
           <p className="text-white/52 leading-relaxed mb-8 max-w-md" style={{ fontSize: "13.5px" }}>
             Crafting high-performance web architectures and fluid user experiences —
-            from blazing React SPAs to hybrid Electron desktop apps, powered by modern cloud infrastructure.
+            from blazing React SPAs to scalable full-stack web platforms, powered by modern cloud infrastructure.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 mb-8">
             <a
-              href="https://buykart-pearl.vercel.app"
-              target="_blank" rel="noopener noreferrer"
+              href="#projects"
               className="group flex items-center gap-2 px-5 py-3 rounded-xl font-bold text-white text-[13px] transition-all duration-300 hover:scale-105 active:scale-95"
               style={{ background: "linear-gradient(135deg,#7c3aed,#4c1d95)", boxShadow: "0 4px 22px rgba(124,58,237,0.5)" }}
             >
-              🛒 View BuyKart
+              🚀 View Projects
               <svg xmlns="http://www.w3.org/2000/svg" width={13} height={13} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.2} className="group-hover:translate-x-1 transition-transform">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
